@@ -41,6 +41,10 @@ into the submission before handing it to the submit state machine. So behaviour 
 - the submission carries the button text, so the user's own draft is **put back into the composer** right after;
 - the button is disabled while a send, adjudication, or command claim is in flight.
 
+After the click the conversation holds exactly that message — whatever the button says is what goes out:
+
+![The message sent by the button](docs/images/sent.png)
+
 ## Install
 
 **From the plugin market**: DSH sidebar → **Plugins** → **Discover** → find "发送按钮" → install → enable.
