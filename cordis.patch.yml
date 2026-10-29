@@ -1,0 +1,9 @@
+# 「发送按钮」的配置层。
+#
+# 插一行就把宿主半区（index.js，空壳）和浏览器半区（client.js，真正的按钮）
+# 一起挂上；两个半区同属一个包，靠 package.json 里的 dsh.bundle / dsh.client 声明。
+
+- insert:
+    - id: dsh-continue-button
+      name: 'dsh-continue-button'
+      config: {}

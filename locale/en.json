@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Send button",
+    "description": "Adds an editable one-click send button to the right of the composer; its text is sent as-is, defaulting to 继续."
+  }
+}

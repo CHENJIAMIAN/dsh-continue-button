@@ -1,0 +1,66 @@
+{
+  "name": "dsh-continue-button",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "DSH 输入框右边的可编辑发送按钮：点一下就把它的文本发出去，默认「继续」。An editable one-click send button beside the DSH composer, defaulting to 继续.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "README.en.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "web-ui",
+    "composer",
+    "continue",
+    "quick-send"
+  ],
+  "author": "CHENJIAMIAN",
+  "license": "MIT",
+  "icon": "./icon.svg",
+  "meta": {
+    "title": "发送按钮",
+    "description": "输入框右边多一个可改文本的按钮，点一下就把它的文本直接发出去；默认「继续」。"
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CHENJIAMIAN/dsh-continue-button.git"
+  },
+  "homepage": "https://github.com/CHENJIAMIAN/dsh-continue-button#readme",
+  "bugs": {
+    "url": "https://github.com/CHENJIAMIAN/dsh-continue-button/issues"
+  },
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-conversation"
+      ]
+    }
+  }
+}
